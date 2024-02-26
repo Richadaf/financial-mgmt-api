@@ -1,4 +1,12 @@
-<!-- Jekomo api -->
+# Jekomo API
+</br>
+
+![IsMaintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![AMA](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
+![StarMe](https://img.shields.io/github/stars/richadaf/financial-mgmt-api.svg)
+![Follow](https://img.shields.io/github/followers/richadaf.svg?style=social&label=Follow&maxAge=2592000)
+![IssuesFound](https://img.shields.io/github/issues/richadaf/financial-mgmt-api.svg)
+
 
 ## Description
 
@@ -155,7 +163,26 @@ Contains other services we put together mostly third-party libraries.
 
 For enquires and questions, contact
 
-- [@richadaf](https://github.com/richadaf)
+
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/richiedagenius)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/richiedagenius)
+[![Snapchat](https://img.shields.io/badge/Snapchat-FFFC00?style=for-the-badge&logo=snapchat&logoColor=white)](https://t.snapchat.com/KdJfMVSH)
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://t.snapchat.com/KdJfMVSH)
+
+## Technologies used
+
+![NodeJs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
+![Testing](https://img.shields.io/badge/testing%20library-323330?style=for-the-badge&logo=testing-library&logoColor=red)
+![Sinon](https://img.shields.io/badge/sinon.js-323330?style=for-the-badge&logo=sinon)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![VSCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
 
 ## License
 
