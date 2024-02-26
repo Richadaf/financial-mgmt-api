@@ -1,5 +1,4 @@
 # Jekomo API
-</br>
 
 ![IsMaintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![AMA](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
