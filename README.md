@@ -52,7 +52,7 @@ $ yarn run test:cov
 
 ## Documentation
 
-Check this [link](docs-jekomo.vercel.app)
+Check this [link](https://docs-jekomo.vercel.app)
 
 ### Build your own documentation instance
 
