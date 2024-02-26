@@ -26,7 +26,6 @@
  * @requires ../strategies/jwt.strategy
  * @requires ../dto/login.dto
  * @requires ../services/core/db/mongoose.service
- * @module test
  */
 
 import { Test } from '@nestjs/testing';
