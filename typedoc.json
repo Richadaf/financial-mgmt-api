@@ -1,0 +1,17 @@
+{
+    "out": "docs",
+    "theme": "default",
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "disableSources": true,
+    "hideGenerator": true,
+    "name": "Jekomo",
+    "externalPattern": ["**/node_modules/**"],
+    "exclude": ["**/node_modules/**"],
+    "customCss": "./docs-theme.css",
+    "plugin": [
+        "typedoc-plugin-missing-exports"
+      ]
+    
+}

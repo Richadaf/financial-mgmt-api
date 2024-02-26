@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach",
+      "port": 9229,
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    
+    {
+      "name": "Launch Start via NPM",
+      "request": "launch",
+      "runtimeArgs": [
+        "run",
+        "start:debug"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "console": "integratedTerminal",
+      "type": "node"
+    },
+    {
+      "name": "Launch Test Debug via NPM",
+      "request": "launch",
+      "runtimeArgs": [
+        "run",
+        "test:debug"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "console": "integratedTerminal",
+      "type": "node"
+    }
+  ]
+}

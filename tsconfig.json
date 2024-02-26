@@ -1,13 +1,23 @@
 {
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "src/types/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "compilerOptions": {
     "module": "commonjs",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
-    "sourceMap": true,
+    "target": "ES2020",
+    // "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
@@ -16,6 +26,20 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    // "inlineSources": true,
+    "typeRoots": [
+      "./src/types",
+      "node_modules/@types"
+    ],
+    // "sourceRoot": "/",
+    "types": [
+      "jest",
+      "node"
+    ],
+    // "paths": {
+    //   "*": ["node_modules/*"]
+    // },
+    "allowJs": true,
   }
 }
