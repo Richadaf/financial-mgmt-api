@@ -11,8 +11,7 @@
     "exclude": ["**/node_modules/**"],
     "customCss": "./docs-theme.css",
     "plugin": [
-        "typedoc-plugin-missing-exports",
-        "typedoc-plugin-markdown",
+        "typedoc-plugin-missing-exports"
       ]
     
 }

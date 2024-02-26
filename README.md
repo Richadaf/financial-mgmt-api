@@ -4,7 +4,7 @@
 
 Jekomo is a task that implements components of a financial system within a software development company.
 
-Here's the full requirement I got for this project: [Requirements](REQUIREMENTS)
+Here's the full requirement I got for this project: [Requirements](https://github.com/Richadaf/financial-mgmt-api/blob/master/REQUIREMENTS.md)
 
 ## Installation
 
@@ -35,7 +35,7 @@ If you want to use a service like postman, here is the url you can call for this
 
 `http://localhost:3000/v1/`
 
-As for the routes you can test, see [Routes](ROUTES)
+As for the routes you can test, see [Routes](https://github.com/Richadaf/financial-mgmt-api/blob/master/ROUTES.md)
 
 ## Test
 
