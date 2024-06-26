@@ -44,7 +44,7 @@ const protectedRoutes = [
   { path: 'users/logoutAll', method: RequestMethod.ALL },
   // { path: 'users/logout', method: RequestMethod.ALL },
   { path: 'users/grantAdmin', method: RequestMethod.ALL },
-  { path: 'users/grantUser', method: RequestMethod.ALL },
+  { path: 'users/revokeAdmin', method: RequestMethod.ALL },
 ];
 /**
  * @module Jekomo - This is the main module for the application. It sets up the necessary services, controllers and middleware.

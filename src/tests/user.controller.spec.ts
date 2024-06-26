@@ -1,5 +1,5 @@
 /**
- * @file This file contains tests for the user controller. It includes tests for all the methods in the user controller including signup, login, logout, logoutAll, grantAdmin, and grantUser.
+ * @file This file contains tests for the user controller. It includes tests for all the methods in the user controller including signup, login, logout, logoutAll, grantAdmin, and revokeAdmin.
  * @requires {@link https://www.npmjs.com/package/@nestjs/testing @nestjs/testing}
  * @requires {@link https://www.npmjs.com/package/@nestjs/mongoose @nestjs/mongoose}
  * @requires ../controllers/user.controller
@@ -500,22 +500,22 @@ describe('UserController', () => {
       });
     });
 
-    describe('grantUser', () => {
+    describe('revokeAdmin', () => {
       it('should return a response with success and message', async () => {
         const mockUser: ChangeRoleDto = { id: '507f1f77bcf86cd799439011' };
         const mockResponse: ResponseDto<null> = {
           success: true,
           message: 'User role switched to admin successfully',
         };
-        const grantUserStub = sandbox.stub(userService, 'grantUser').resolves({
+        const revokeAdminStub = sandbox.stub(userService, 'revokeAdmin').resolves({
           n: 1,
           nModified: 1,
           ok: 1,
         });
-        expect(await userController.grantUser({ id: mockUser.id })).toEqual(
+        expect(await userController.revokeAdmin({ id: mockUser.id })).toEqual(
           mockResponse,
         );
-        sinon.assert.calledOnceWithExactly(grantUserStub, { id: mockUser.id });
+        sinon.assert.calledOnceWithExactly(revokeAdminStub, { id: mockUser.id });
       });
 
       it('should handle the service error and return a response with success false and message', async () => {
@@ -524,15 +524,15 @@ describe('UserController', () => {
           success: false,
           message: 'Failed to change role',
         };
-        const grantUserStub = sandbox
-          .stub(userService, 'grantUser')
+        const revokeAdminStub = sandbox
+          .stub(userService, 'revokeAdmin')
           .resolves(null);
-        const { success, message } = await userController.grantUser({
+        const { success, message } = await userController.revokeAdmin({
           id: mockUser.id,
         });
         expect(success).toEqual(mockResponse.success);
         expect(message).toEqual(mockResponse.message);
-        sinon.assert.calledOnceWithExactly(grantUserStub, { id: mockUser.id });
+        sinon.assert.calledOnceWithExactly(revokeAdminStub, { id: mockUser.id });
       });
 
       it('should validate the user input and return a 400 error if invalid', async () => {

@@ -208,7 +208,7 @@ export class UserService {
    * @param {ChangeRoleDto} payload - The change role data.
    * @returns {Promise<mongoose.UpdateWriteOpResult>} - The result of the grant user operation.
    */
-  async grantUser(
+  async revokeAdmin(
     payload: ChangeRoleDto,
   ): Promise<mongoose.UpdateWriteOpResult> {
     return await this.userModel.updateOne(

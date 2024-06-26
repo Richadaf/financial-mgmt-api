@@ -106,13 +106,13 @@ export default class UserController {
     };
   }
   /** Endpoint for revoking a user's admin privileges. */
-  @Post('grantUser')
+  @Post('revokeAdmin')
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRoles.ADMIN)
-  public async grantUser(
+  public async revokeAdmin(
     @Body() payload: ChangeRoleDto,
   ): Promise<ResponseDTO<null>> {
-    const data = await this.userService.grantUser(payload);
+    const data = await this.userService.revokeAdmin(payload);
     return {
       success: !!data,
       message: data
